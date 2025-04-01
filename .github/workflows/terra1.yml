@@ -21,3 +21,9 @@ jobs:
           terraform_version: 1.7.0  # Specify the Terraform version
       - name: Terraform version check
         run: terraform --version
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: deployment job
+        run: echo "Deployment job starting.."
