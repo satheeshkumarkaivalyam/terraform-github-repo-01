@@ -5,10 +5,11 @@
 > [!TIP]
 > Helpful advice for doing things better or more easily.
 
-Some basic Git commands are:
+Some basic Terraform commands are:
 ```
-git status
-git add
-git commit
+terraform init
+terraform fmt
+terraform validate
+terraform plan
+terraform apply
 ```
-
