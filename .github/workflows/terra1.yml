@@ -15,3 +15,9 @@ jobs:
         run: |
           ls -l
           pwd
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v2
+        with:
+          terraform_version: 1.7.0  # Specify the Terraform version
+      - name: Terraform version check
+        run: terraform --version
